@@ -2370,7 +2370,7 @@ article.store .articles > div,article.profile .articles > div {
 }
 
 .write-comment button[type="submit"] {
-    width: 75px;
+    width: 91px;
     height: 44px;
     background: #0ba2ce url(../img/comment-icon.png) no-repeat 6px;
     padding-left: 28px;
@@ -2388,7 +2388,8 @@ article.store .articles > div,article.profile .articles > div {
 
 .write-comment textarea {
     width: 90.4%;
-    width: -webkit-calc(100% - 78px);width:calc(100% - 78px);
+    width: -webkit-calc(100% - 94px);
+    width:calc(100% - 94px);
     border: 1px solid #e8e8e8;
     vertical-align: top;
     padding-left: 7px;
