@@ -1,0 +1,38 @@
+aside
+	.side-bar
+		.profile-pic: img(src="img/profile-pic.jpg")
+		//- a.user(href="profile.html")
+			span.name Karim Farid
+			span.domain .pensandbooks.com
+		.user-info
+			ul.clearfix
+				li.followrs-count: a(href="#")
+					.hide-text followers number
+					.count 20
+				li.pins-count: a(href="#")
+					.hide-text pens number
+					.count 20
+				li.books-count: a(href="#")
+					.hide-text books number
+					.count 20
+				li.views-count: a(href="#")
+					.hide-text views number
+					.count 20
+
+		.user-actions
+			ul
+				if page
+					if page.link3
+						li: a.writer-brief(href="#")= page.link3
+					li: a.my-pens(href="article-add.html")= page.link1
+					li: a.my-books(href="book-add.html")= page.link2
+		//.social
+			p follow me :
+			ul.hide-text
+				li.youtube: a(href="www.youtube.com") youtube
+				li.twitter: a(href="www.twitter.com") twitter
+				li.facebook: a(href="www.facebook.com") facebook
+	.side-bar-footer
+		ul
+			li: a.settings(href="settings.html") settings
+			li: a.sign-out(href="login.html") sign out

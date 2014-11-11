@@ -1,0 +1,55 @@
+-var page = {link1:'new message' , link2: 'messages'}
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.store
+			.top.clearfix
+				.panel-page
+					.panel-header: h2 settings
+					.page-header lorem ipsum
+					.panel-body.settings
+						.form-horizontal.flat
+							.form-group
+								label name
+								.control: input.form-control(type="text")
+							.form-group
+								label e-mail
+								.control: input.form-control(type="text")
+							.form-group
+								label upload file
+								.control: input.form-control(type="file")
+							.form-group
+								label lorem ipsum
+								.control.table-striped
+									input(type="checkbox",id="check").check
+									<label class='check' for='check'><i class="fa fa-check"></i></label>
+							.form-group
+								label lorem
+								span.radio
+									input(type="radio", name="unkown", id="yes")
+									label(for="yes") yes
+								span.radio
+									input(type="radio", name="unkown", id="no")
+									label(for="no") no
+							.form-group
+								label lorem
+								.control
+									select.select
+										option option 
+										option option 
+							.form-group
+								label publish
+								.control
+									// here you will find the check box that is related to this switch
+									input(type="checkbox")
+									.Switch.Round.Off
+										.Toggle
+							.form-control
+								.button-group
+									button(type="button").btn.btn-default save
+									button(type="button").btn.btn-danger cancel
+		include assets/jade/footer

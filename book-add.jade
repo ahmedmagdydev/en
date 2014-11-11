@@ -1,0 +1,61 @@
+-var page = {link1:'add pen' , link2: 'add book'}
+
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article
+			.top.clearfix
+				.panel-header
+					h2 add book
+					
+				.panel-body
+					.clearfix
+						.home
+							.book-add
+								.form-horizontal.flat
+									.form-group
+										label book name
+										.control: input.form-control(type="text")
+									.form-group
+										label category
+										.control
+											select.select
+												option option 
+												option option 
+									.form-group
+										label summary
+										.control: textarea.form-control
+									
+									
+						.cover#croppic
+						.form-group
+							table.table-details
+								thead
+									tr
+										th place
+										th adress
+										th phone
+										th: a(href="#").add-row 
+								tbody
+									-for(i=0;i<5;i++)
+										tr
+											td
+												input.form-control(type="text")
+											td
+												input.form-control(type="text")
+											td
+												input.form-control(type="text")
+											td
+												a(href="#").delete-row 
+						.form-control
+											.button-group
+												button(type="button").btn.btn-default publish
+												button(type="button").btn.btn-danger cancel
+			
+
+		include assets/jade/footer
+				

@@ -1,0 +1,20 @@
+-var page = {link1:'new message' , link2: 'messages'}
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.center-article
+			.top.clearfix
+				.panel-page
+					.panel-header
+						h2 information usage policy
+						span    last update: 15 Nov 2013
+					.panel-body
+						-for(i=0;i<7;i++)
+							h3.title how to use information
+							p learn more about how to use info
+		include assets/jade/links-side-bar
+		include assets/jade/footer

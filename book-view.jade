@@ -1,0 +1,114 @@
+-var page = {link1:'add pen' , link2: 'add book'}
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.center-article
+			.top.clearfix
+				.panel-header
+					h2 lorem
+					span
+						span share with :  
+						ul.social
+							li.facebook: a(href="#")
+							li.twitter: a(href="#")
+							li.blogger: a(href="#")
+						ul.info
+							li.views-count 20
+						span.date 2:28pm
+						a(href="#").btn.btn-danger.report: i.fa.fa-bug
+				.panel-body
+					.clearfix
+						.home
+							.book-view
+								.clearfix
+									label book:
+									p  ahmed magdy
+								.clearfix
+									label summery:
+									p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam ut voluptatibus, maiores repellat assumenda fugit.
+						img.cover(src="img/book.jpg")
+					table.table-details
+						thead
+							tr
+								th place
+								th address
+								th phone
+						tbody
+							-for(i=0;i<5;i++)
+								tr
+									td lorem ipsum	
+									td lorem ipsum	
+									td 01003361217
+			.comment-area
+				form
+					.write-comment
+						textarea( placeholder="write comment  . . . ")
+						button(type="submit") comment
+				.comments
+					.title.clearfix
+						h3 comment
+						span.comments-count 
+							sapn.red 56 
+							| comment 
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit alias saepe, assumenda sed nostrum libero.
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum alias maxime aliquam expedita nesciunt sapiente.
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt veniam dolor tempora dolore inventore iusto.
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptas a officiis commodi illo incidunt.
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sunt eius, sint consequatur maiores quod.
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum vitae, enim adipisci quo fuga accusantium.
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non recusandae fugiat iusto temporibus, necessitatibus sed.
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia illum, atque necessitatibus ipsum quibusdam possimus!
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae optio repellendus eum dicta quos accusantium.
+						.comment-date 26 Mars 2014 at PM 12:5
+
+		include assets/jade/my-left-side-bar
+		include assets/jade/footer
+				

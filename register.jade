@@ -1,0 +1,49 @@
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body.login
+		header.clearfix
+			.logo: img(src="img/logo.png")
+			.new-user: a(href="login.html") sign in
+		.main-content
+			#register-form
+				.form-group
+					label.required user name
+					input.form-control.user-name(type="text")
+				.form-group
+					label.required name
+					input.form-control.user-name(type="text")
+				.form-group
+					label.required e-mail
+					input.form-control.user-mail(type="email")
+				.form-group
+					label.required password
+					input.form-control.user-pass(type="password")
+				.form-group
+					label.required sex
+					select.select
+						option male
+						option female
+				.form-group
+					label.required magazine name
+					input.form-control.magazine-name(type="text")
+					span pensandbooks.com.
+				.form-group
+					a.submit(href="index.html") register
+				.inline-form.clearfix
+					.form-group.checkbox.pull-right
+						input(type="checkbox" id="remember")
+						label(for="remember") remember
+					.pull-left
+						a(href="forgot-pass.html")  forgot password
+			.links
+				ul
+					li: a(href="about-us.html") about us
+					li: a(href="privacy.html") privacy
+					li: a(href="licence.html") terms & conditions
+		include assets/jade/footer
+
+
+
+

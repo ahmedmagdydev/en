@@ -1,0 +1,135 @@
+-var page = {  link1:'my pens' , link2:'my books',link3:'about writer'}
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.profile
+			.top.clearfix
+				.profile-summary
+					.profile-right
+						.profile-pic
+							img(src="img/profile-pic.jpg")
+							.profile-details
+								ul
+									li.following: a(href="#") 890
+									li.followers: a(href="#") 890
+									li.views 890
+						.inline-buttons
+							button.follow(href="#")
+								i.fa.fa-rss
+								|  follow   
+
+							button.share(href="#"): i.fa.fa-share-alt
+							button.sendMessage(href="#"): i.fa.fa-envelope
+					.profile-info
+						a.domain(href="#")
+							h2 karimfarid.pensandbooks.com
+						h2.title about writer
+						
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ducimus libero, quisquam magnam. Ipsam iusto doloremque corporis tempora, nemo consectetur necessitatibus quam debitis quisquam unde eaque dolorem, sint hic beatae, sequi laboriosam possimus reiciendis animi! Officiis, obcaecati iure facere consectetur at veniam minima. Explicabo accusantium animi, dolores. Eum, tenetur, architecto.
+							a(href="#").more ..... more
+					//- .new-panel
+						.choosen-pens
+							a.title(href="#") أحدث penات
+							- for (var x = 0; x < 7; x++)
+								.pen
+									img(src="img/pen.jpg")
+									a.title(href="#") قيامة
+									ul.clearfix.info
+										li.views-count 480
+										li.retweets-count  480
+							
+						.choosen-books
+							a.title(href="#") أحدث الbooks
+							- for (var x = 0; x < 6; x++)
+								.book
+									img(src="img/book-thumb.jpg")
+									a.title(href="#") قيامة
+									ul.clearfix.info
+										li.views-count 480
+										li.retweets-count  480
+			.bottom.clearfix
+				.user-data.clearfix
+					.data
+						label name
+						span Karim Farid
+					.data
+						label age
+						span 31
+					.data
+						label member since
+						span 30\4\2014
+					.data
+						label.sex.hide-text sex
+						span male
+					.data
+						label.nationality.hide-text national
+						span egypt
+					.data
+						label.job.hide-text job
+						span writer
+					.data
+						label.study.hide-text collage
+						span  computer science
+					.data
+						label.email.hide-text e-mail
+						span Karim.samy.20@gmail.com
+					.data
+						label.fa.fa-barcode
+						span  402-5545-505461
+					.data
+						label.fa.fa-star
+						span swimming - football
+					.data
+						label.phone.hide-text phone
+						span 01020241733
+					.data
+						label follow me
+						span
+							ul.social.clearfix
+								li.youtube: a(href="#")
+								li.facebook: a(href="#")
+								li.twitter: a(href="#")
+								li.blogger: a(href="#")
+				.articles.clearfix
+					h2.panel-header my pens
+					- for(i=0;i<10;i++)
+						div
+							.controls
+								a.edit(href="#" title="edit")
+									i.fa.fa-pencil-square-o
+								a.close(href="#" title="delete")
+									&times;
+							img.article-thumb(src="img/article.jpg")
+							h3.title: a(href="article-view.html") Al-Farid
+							.writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name Karim Farid
+								.category Literature
+								ul.pull-left.info
+									li.views-count 480
+				.pagination
+					button(type="button").btn: i.fa.fa-angle-down
+				.books.clearfix
+					h2.panel-header my books
+					- for(i=0;i<10;i++)
+						div
+							.controls
+								a.edit(href="#" title="edit")
+									i.fa.fa-pencil-square-o
+								a.close(href="#" title="delete")
+									&times;
+							img.book-thumb(src="img/book.jpg")
+							h3.title: a(href="book-view.html") Al-Farid
+							.writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name Karim Farid
+								.category poetry
+								ul.pull-left.info
+									li.views-count 480
+				.pagination
+					button(type="button").btn: i.fa.fa-angle-down
+		include assets/jade/footer

@@ -1,0 +1,102 @@
+-var page = {link1:'add pen' , link2: 'add book'}
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.center-article
+			.top.clearfix
+				.panel-header
+					h2 bany salool
+					span
+						span share with :  
+						ul.social
+							li.facebook: a(href="#")
+							li.twitter: a(href="#")
+							li.blogger: a(href="#")
+						ul.info
+							li.views-count 20
+						span.date 2:28pm
+				.panel-body
+					.clearfix
+						.home
+							.article-view
+								.clearfix
+									label writer:
+									p: a(href="profile.html")  Dr/ Fatma El-Zahraa
+								.clearfix
+									label pen:
+									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis recusandae at, nulla nisi qui dolorum dolore, deserunt eveniet harum rerum quaerat tempora sed voluptatibus corporis quasi accusamus illo! Dolores, amet, illo reprehenderit ducimus animi eveniet iste, adipisci quia commodi in doloremque quod officiis numquam nesciunt expedita fugit! Doloremque reprehenderit, perferendis eveniet inventore eligendi temporibus in praesentium rem iusto, aut, voluptatum neque! Nulla repellendus eligendi iusto debitis, necessitatibus eos deleniti ad dolor. Consequatur aspernatur assumenda dolorem deleniti, est ipsa. Quia delectus maxime nisi illo magnam doloremque, explicabo et amet quos labore. Totam minus vero distinctio voluptas reprehenderit odit rem veniam dolor, natus cupiditate animi ipsa sed quae asperiores vitae dolorum id nulla unde mollitia consectetur sint, laboriosam! Nisi praesentium dolorum autem similique quaerat suscipit atque ipsam molestiae facilis reiciendis amet, illum mollitia et enim, possimus voluptatem, eos quos alias obcaecati repudiandae. Voluptatem dignissimos animi, quisquam cumque illo. Sapiente, accusantium, labore?
+
+						img.cover(src="img/article.jpg")
+			.comment-area
+				form
+					.write-comment
+						textarea(placeholder="write comment  . . . ")
+						button(type="submit") comment
+				.comments
+					.title.clearfix
+						h3 comment
+						span.comments-count 
+							sapn.red 56 
+							| comment 
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit explicabo quisquam, ullam id ducimus vitae?
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id vero ullam consequuntur, illum quas tempora.
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae error harum quia perspiciatis odio ea!
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, eaque, eligendi! Iste adipisci, ullam est!
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quisquam sapiente id similique est quos.
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quaerat dolore cumque culpa nemo quam.
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae aspernatur fuga hic quaerat dolorem!
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, repellat! In saepe atque possimus aut.
+						.comment-date 26 Mars 2014 at PM 12:5
+					.comment
+						.comment-thumb: img(src="img/commenter.jpg")
+						.comment-body
+							a.commenter-name(href="#") Ahmed Magdy
+							p   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia animi, rem libero nesciunt similique, sed.
+						.comment-date 26 Mars 2014 at PM 12:5
+
+		include assets/jade/my-left-side-bar
+		include assets/jade/footer
+				

@@ -1,0 +1,46 @@
+-var page = {  link1:'add pen' , link2:'add book'}
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article.center-article
+			.top.clearfix
+				h2 notifications
+				-for(i=0;i<5;i++)
+					.panel-notifications
+						.panel-header
+							p day
+						.panel-body
+							p.comment commented
+								a(href="profile.html") Manal Abd-Elfatah
+								| and
+								a(href="profile.html") 16‏ others
+								| on
+								a(href="profile.html") your post
+								| . 03:12 PM
+							p.up commented
+								a(href="profile.html") Manal Abd-Elfatah
+								| and
+								a(href="profile.html") 16‏ others
+								| on
+								a(href="profile.html") your post
+								| . 03:12 PM
+							p.down commented
+								a(href="profile.html") Manal Abd-Elfatah
+								| and
+								a(href="profile.html") 16‏ others
+								| on
+								a(href="profile.html") your post
+								| . 03:12 PM
+							p.retweet commented
+								a(href="profile.html") Manal Abd-Elfatah
+								| و
+								a(href="profile.html") 16‏ others
+								| on
+								a(href="profile.html") your post
+								| . 03:12 PM
+		include assets/jade/left-side-bar
+		include assets/jade/footer

@@ -1,0 +1,47 @@
+-var page = {link1:'new message' , link2: 'messages'}
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article
+			.top.clearfix
+				.messages
+					h2.panel-header messages 
+						| (55)
+					table.table-striped
+						thead
+							tr
+								th(width="5%")
+									input(type="checkbox",id="check_all").check
+									<label class='check' for='check_all'><i class="fa fa-check"></i></label>
+								th(width="20%") sender
+								th(width="40%") title
+								th(width="20%") date
+								th(width="5%",align="center"): a.delete-icon(href="#")
+						tbody
+							-for(i=1;i<21;i++)
+								tr
+									td
+										input(type="checkbox",id="check_#{i}").check
+										<label class='check' for='check_#{i}'><i class="fa fa-check"></i></label>
+									td
+										img(src="img/commenter.jpg")
+										a.sender(href="#") ahmed magdy
+									td
+										a.messageTitle(href="#") lorem ipsum
+										// add the message content in the paragraph below the message title to show or hide it by clicking the message title
+										p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, nam. Ipsum quaerat rem eum numquam.
+									td: a(href="#") 25 april 2014
+									td: a.delete-icon(href="#")
+					.pagination
+						button(type="button").btn: i.fa.fa-angle-down
+					//- .pagination
+						ul.clearfix
+							li: a(href="#") السابق
+							-for(i=1;i<8;i++)
+								li: a(href="#")=i
+							li: a(href="#") التالى
+		include assets/jade/footer

@@ -1,0 +1,37 @@
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body.login
+		header.clearfix
+			.logo: img(src="img/logo.png")
+			.new-user: a(href="register.html") register new user
+		.main-content
+			#login-form
+				.form-group
+					label.required user name
+					input.form-control.user-name(type="text" required)
+				.form-group
+					label.required password
+					input.form-control.user-pass(type="password" required)
+				.form-group
+					.error user name or password you entered is incorrect
+
+				.form-group
+					a.submit(href="index.html") login
+				.inline-form.clearfix
+					.form-group.checkbox.pull-right
+						input(type="checkbox" id="remember")
+						label(for="remember") remember
+					.pull-left
+						a(href="forgot-pass.html")  forgot password
+			.links
+				ul
+					li: a(href="who-we-are.html") about us
+					li: a(href="privacy.html") privacy
+					li: a(href="licence.html") terms & conditions
+		include assets/jade/footer
+
+
+
+

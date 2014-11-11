@@ -1,0 +1,46 @@
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article
+			.top.clearfix
+				.search#search
+					.filter
+						ul.clearfix
+							li.selected: a(href="#") all
+							li: a(href="#") books
+							li: a(href="#") pens
+							li: a(href="#") people
+					.results
+						h2 search results (65)
+						section.result.book.clearfix
+							img(src="img/book.jpg").result-img
+							.writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name: a(href="profile.html") Karim Farid
+							h3: a(href="#") Lorem ipsum.
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, necessitatibus quo ipsa qui cupiditate provident!
+								a(href="#").more    .... more
+						section.result.article.clearfix
+							img(src="img/article.jpg").result-img
+							.writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name: a(href="profile.html") Karim Farid
+							h3: a(href="#") lorem ipsum
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi perferendis repellendus, vel animi facere est.
+								a(href="#").more    .... more
+						section.result.person.clearfix
+							img(src="img/profile-pic.jpg").result-img
+							//- .writer-details
+								.user-pic: img(src="img/commenter.jpg")
+								.user-name: a(href="profile.html") Karim Farid
+							h3: a(href="#") Karim Farid
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo rem, maiores officia ut aut illo?
+								a(href="#").more    .... more
+								
+					.pagination
+						button(type="button").btn: i.fa.fa-angle-down
+		include assets/jade/footer

@@ -1,0 +1,15 @@
+aside
+	.side-bar.store
+		#accordion
+			h3.title.pens: a(href="#") pens
+			ul
+				- for(i=0;i<50;i++)
+					li: a(href="#") poetry
+			h3.title.books: a(href="#") books
+			ul
+				- for(i=0;i<50;i++)
+					li: a(href="#") poetry
+	//- .side-bar-footer
+		ul
+			li: a.settings(href="settings.html") settings
+			li: a.sign-out(href="sign-out.html") sign out

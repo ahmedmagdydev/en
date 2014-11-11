@@ -1,0 +1,161 @@
+-var page = {link1:'add book' , link2: 'add pen'}
+doctype html
+html(dir="ltr")
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		#settingsMode.dropdown.dropdown-tip
+			ul.dropdown-menu
+				li.delete: a(href="#") delete
+				li.edit: a(href="#") edit
+		.container.center-article
+			article.newsFeed
+				.top.clearfix
+					p.retweet
+						a(href="profile.html") Manal Abd-Elfatah
+						i.fa.fa-retweet
+						a(href="profile.html") Al-Farid
+						|    - since 30 mins
+					.divider
+					p.commented
+						a(href="profile.html") Manal Abd-Elfatah
+						i.fa.fa-comment
+						a(href="profile.html") Al-Farid
+						|    - since 30 mins
+					.divider
+					p.like
+						a(href="profile.html") Manal Abd-Elfatah
+						i.fa.fa-arrow-up
+						a(href="profile.html") Al-Farid
+						|    - since 30 mins
+					.divider
+					p.dislike
+						a(href="profile.html") Manal Abd-Elfatah
+						i.fa.fa-arrow-down
+						a(href="profile.html") Al-Farid
+						|    - since 30 mins
+					.divider
+					.home
+						a(href="#" data-dropdown="#settingsMode").dropdownSettings
+							i.fa.fa-gears
+
+						.writer-info
+							.user-pic: img(src="img/profile-pic.jpg")
+							a.user-url(href="profile.html") Karim Farid
+							div
+								span.date 13-4-2014
+								span.time 12:22PM
+						.book.content
+							h2: a(href="book-view.html") Al-Farid
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati molestiae sapiente dicta, numquam, earum quaerat aperiam nulla totam perferendis et.
+								a.more(href="#")    .... more
+					img.cover(src="img/book.jpg")
+					.article-actions
+						a.like(href="#")
+							i.fa.fa-arrow-up 
+							span 598
+						a.dislike(href="#")
+							i.fa.fa-arrow-down
+							span 3
+						a.retweet(href="#")
+							i.fa.fa-retweet
+							span 255
+				.comment-area
+					form
+						.write-comment
+							textarea( placeholder="write comment  . . . ")
+							button(type="submit") comment
+					.comments
+						.title.clearfix
+							h3 comment
+							span.comments-count 56 comment
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, a. Hic inventore, nisi aliquid consequatur modi delectus. Nemo, non, ratione?
+							.comment-date 26 Mars 2014 at PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem labore cupiditate unde nihil delectus aut expedita animi, nostrum tempora fugiat.
+							.comment-date 26 Mars 2014 at PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis aperiam ipsam illum asperiores odit labore, blanditiis dolores optio officiis placeat.
+							.comment-date 26 Mars 2014 at PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum temporibus culpa magni, consectetur odit soluta harum repudiandae eligendi architecto voluptate.
+							.comment-date 26 Mars 2014 at PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sapiente aliquam reprehenderit ab animi officia, excepturi quidem eum facere molestiae.
+							.comment-date 26 Mars 2014 at PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ratione perferendis fugiat cupiditate, nesciunt aperiam illum quos quae explicabo harum.
+							.comment-date 26 Mars 2014 at PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quo deleniti sapiente doloremque veritatis error neque illum non, illo nam.
+							.comment-date 26 Mars 2014 at PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, blanditiis, provident. Porro quod odit odio ipsam facilis, veritatis, molestias eveniet.
+							.comment-date 26 Mars 2014 at PM 12:5
+						.comment
+							.comment-thumb: img(src="img/commenter.jpg")
+							.comment-body
+								a.commenter-name(href="#") Ahmed Magdy
+								p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem quaerat tempora veritatis voluptas consequuntur harum asperiores in autem, reprehenderit rem.
+							.comment-date 26 Mars 2014 at PM 12:5
+			article.newsFeed
+				.top.clearfix
+					.home
+						a(href="#" data-dropdown="#settingsMode").dropdownSettings
+							i.fa.fa-gears
+						.writer-info
+							.user-pic
+								img(src="img/profile-pic.jpg")
+							a.user-url(href="#") Karim Farid
+							div
+								span.date 13-4-2014
+								span.time 12:22PM
+						.pen.content
+							h2: a(href="view-article.html") مقال
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum incidunt, corporis. Maiores laborum illum minima expedita beatae soluta! Praesentium, quia.
+								a.more(href="#") ....... more 
+					img(src="img/article.jpg").cover
+					.article-actions
+						a.like(href="#")
+							i.fa.fa-arrow-up 
+							span 598
+						a.dislike(href="#")
+							i.fa.fa-arrow-down
+							span 3
+						a.retweet(href="#")
+							i.fa.fa-retweet
+							span 255
+				.comment-area
+					form
+						.write-comment
+							textarea( placeholder="write comment  . . . ")
+							button(type="submit") comment
+		include assets/jade/left-side-bar
+		include assets/jade/footer
+				

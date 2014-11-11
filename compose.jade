@@ -1,0 +1,29 @@
+-var page = {link1:'new message' , link2: 'messages'}
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body
+		include assets/jade/top-nav
+		include assets/jade/side-bar
+		article
+			.top.clearfix
+				.compose
+					.panel-header
+						h2 new message
+
+					.panel
+						.form-horizontal.flat
+							.form-group
+								label to
+								.control: input.form-control(type="text")
+							.form-group
+								label message
+								.control: input.form-control(type="text")
+							.form-group
+								label message
+								.control: textarea(placeholder="message body").form-control
+							.button-group
+								button(type="button").btn.btn-default send
+								button(type="button").btn.btn-danger cancel
+		include assets/jade/footer

@@ -1,0 +1,31 @@
+doctype html
+html(dir="ltr")
+
+	include assets/jade/head
+	body.login
+		header.clearfix
+			.logo: img(src="img/logo.png")
+			.new-user: a(href="register.html") register new user
+		.main-content
+			#forgot-form
+				.form-group
+					label.required e-mail
+					input.form-control.user-mail(type="text" required)
+				
+				.form-group
+					.success new password have been sent to your e-mail press
+						a(href="login.html" style="text-decoration:underline")  here
+						| to sign in
+
+				.form-group
+					a.submit(href="index.html") change password
+			.links
+				ul
+					li: a(href="who-we-are.html") about us
+					li: a(href="privacy.html") privacy
+					li: a(href="licence.html") terms & conditions
+		include assets/jade/footer
+
+
+
+
