@@ -600,7 +600,7 @@ h3 {
 .form-group label {
     display: block;
     margin-bottom: 3px;
-    text-align: right;
+    text-align: center;
     padding-right: 10px;
 }
 
@@ -1013,13 +1013,15 @@ input[type="file"]:active::before {
 }
 
 .login .logo {
-    float: right;
+    float: left;
 }
 
 .login label {
     text-align: left;
 }
-
+.new-user{
+    float: right;
+}
 .login .new-user a {
     padding: .5em;
     background: url(../img/signup-icon.png) left no-repeat;
@@ -1103,7 +1105,7 @@ input[type="file"]:active::before {
 .login .links ul li a {
     color: #313131;
     padding: 0 14px;
-    border-right: 1px solid #313131;
+    border-left: 1px solid #313131;
 }
 
 .login .links ul li:first-child a {
@@ -1133,7 +1135,9 @@ input[type="file"]:active::before {
 .top-nav {
     padding: 9px 11px;
 }
-
+.top-nav .pull-left{
+    float: left !important;
+}
 .top-nav .pageLogo {
     margin: 0;
 }
@@ -1279,6 +1283,7 @@ input[type="file"]:active::before {
     top: 37px;
     display: none;
     max-height: 300px;
+    left: -180px;
 }
 
 .notifications .notification {
@@ -1429,7 +1434,7 @@ aside {
     width: 66px;
     height: 58px;
     display: block;
-    background: url(../img/user-info.png) no-repeat left top;
+    background: url(../img/user-info.png) no-repeat right top;
 }
 
 .user-info li.followrs-count a {
@@ -1724,11 +1729,11 @@ a.user .domain {
     text-align: center;
     background: url(../img/follow-user.png) no-repeat right;
     color: #999999;
-    padding: 0 20px 0 6px;
+    padding: 0  6px 0 20px;
     margin-right: 7px;
     border-right: 1px solid #e8e8e8;
     font-size: 11px;
-    line-height: 18px;
+    line-height: 13px;
 }
 
 .info li:last-child {
@@ -1737,23 +1742,23 @@ a.user .domain {
 }
 
 .info li.followrs-count {
-    background-position: right 0;
+    background-position: left 0;
 }
 
 .info li.pins-count {
-    background-position: right -12px;
+    background-position: left -12px;
 }
 
 .info li.books-count {
-    background-position: right -24px;
+    background-position: left -24px;
 }
 
 .info li.views-count {
-    background-position: right -36px;
+    background-position: left -36px;
 }
 
 .info li.retweets-count {
-    background-position: right -48px;
+    background-position: left -48px;
 }
 
 .info li .count {
@@ -2012,7 +2017,7 @@ article.newsFeed .top {
 }
 
 .user-data .data label {
-    width: 72px;
+    width: 92px;
     display: inline-block;
     border-right: 2px solid #0ba2ce;
     margin-right: 10px;
@@ -2162,7 +2167,7 @@ article.profile .articles > div:hover .controls,article.profile .books > div:hov
 
 .home .writer-info {
     display: inline-block;
-    min-width: 160px;
+    min-width: 200px;
     border-bottom: 2px solid #0099c6;
 }
 
@@ -2199,7 +2204,7 @@ article.profile .articles > div:hover .controls,article.profile .books > div:hov
 }
 
 .home .book-view label,.home .article-view label {
-    width: 12%;
+    width: 13%;
     display: inline-block;
     float: left;
     padding-top: 2px;
@@ -2323,7 +2328,7 @@ article.store .articles > div,article.profile .articles > div {
 }
 
 .followers {
-    width: 994px;
+    width: 996px;
     margin: 0 auto;
 }
 
@@ -2377,7 +2382,7 @@ article.store .articles > div,article.profile .articles > div {
     border: none;
     color: #fff;
     font-size: 13px;
-    margin-left: -3px;
+    margin-left: -4px;
     -webkit-transition: background-color .2s linear;
     transition: background-color .2s linear;
 }

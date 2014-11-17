@@ -95,8 +95,11 @@ html(dir="ltr")
 					h2.panel-header my pens
 					- for(i=0;i<10;i++)
 						div
-							a.close(href="#" title="delete")
-								&times;
+							.controls
+								a.edit(href="#" title="edit")
+									i.fa.fa-pencil-square-o
+								a.close(href="#" title="delete")
+									&times;
 							img.article-thumb(src="img/article.jpg")
 							h3.title: a(href="article-view.html") Al-Farid
 							.writer-details
@@ -111,8 +114,11 @@ html(dir="ltr")
 					h2.panel-header my books
 					- for(i=0;i<10;i++)
 						div
-							a.close(href="#" title="delete")
-								&times;
+							.controls
+								a.edit(href="#" title="edit")
+									i.fa.fa-pencil-square-o
+								a.close(href="#" title="delete")
+									&times;
 							img.book-thumb(src="img/book.jpg")
 							h3.title: a(href="book-view.html") Al-Farid
 							.writer-details

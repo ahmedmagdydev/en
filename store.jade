@@ -6,6 +6,10 @@ html(dir="ltr")
 		include assets/jade/top-nav
 		include assets/jade/store-side-bar
 		article.store
+			.filter
+				ul.clearfix
+					li.selected: a(href="#") Arabic
+					li: a(href="#") English
 			.books
 				- for(i=0;i<10;i++)
 					div
