@@ -14,7 +14,7 @@
 					a(href="profile.html"): i.icon-profile
 			.main-search.pull-left
 				form
-					input(type="search" , placeholder="ابحث هنا ...")
+					input(type="search" , placeholder="search ...")
 					button(type="submit")
 		#headNav.pull-left
 			ul.pageNav
@@ -31,7 +31,9 @@
 								div
 									span.date 13-4-2014
 									span.time 12:22PM
-							p wrote comment for you
+							p 
+								i.fa.fa-comment
+								|  wrote comment for you
 						li.notification.retweet
 							.writer-info
 								.user-pic: img(src="img/profile-pic.jpg")
@@ -39,55 +41,29 @@
 								div
 									span.date 13-4-2014
 									span.time 12:22PM
-								p shared your post
-						li.notification.comment
+								p 
+									i.fa.fa-retweet
+									|  shared your post
+						li.notification.like
 							.writer-info
 								.user-pic: img(src="img/profile-pic.jpg")
 								a.user-url(href="notifications.html") Karim Farid
 								div
 									span.date 13-4-2014
 									span.time 12:22PM
-							p wrote comment for you
-						li.notification.retweet
+							p 
+								i.fa.fa-arrow-up
+								|  liked your post
+						li.notification.dislike
 							.writer-info
 								.user-pic: img(src="img/profile-pic.jpg")
 								a.user-url(href="notifications.html") Karim Farid
 								div
 									span.date 13-4-2014
 									span.time 12:22PM
-								p shared your post
-						li.notification.comment
-							.writer-info
-								.user-pic: img(src="img/profile-pic.jpg")
-								a.user-url(href="notifications.html") Karim Farid
-								div
-									span.date 13-4-2014
-									span.time 12:22PM
-							p wrote comment for you
-						li.notification.retweet
-							.writer-info
-								.user-pic: img(src="img/profile-pic.jpg")
-								a.user-url(href="notifications.html") Karim Farid
-								div
-									span.date 13-4-2014
-									span.time 12:22PM
-								p shared your post
-						li.notification.comment
-							.writer-info
-								.user-pic: img(src="img/profile-pic.jpg")
-								a.user-url(href="notifications.html") Karim Farid
-								div
-									span.date 13-4-2014
-									span.time 12:22PM
-							p wrote comment for you
-						li.notification.retweet
-							.writer-info
-								.user-pic: img(src="img/profile-pic.jpg")
-								a.user-url(href="notifications.html") Karim Farid
-								div
-									span.date 13-4-2014
-									span.time 12:22PM
-								p shared your post
+								p 
+									i.fa.fa-arrow-down
+									|  disliked your post
 						li.seeAll: a(href="notifications.html") see all...
 				li.messages
 					a.hide-text(href="messages.html")

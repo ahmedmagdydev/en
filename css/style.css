@@ -1162,7 +1162,7 @@ input[type="file"]:active::before {
 
 .top-nav .pageNav > li {
     display: inline;
-    float: left;
+    float: right;
     position: relative;
     padding-right: 11px;
     padding-left: 11px;
@@ -1246,7 +1246,7 @@ input[type="file"]:active::before {
     width: 1px;
     position: absolute;
     top: 4px;
-    right: -3px;
+    left: -3px;
 }
 
 .top-nav .main-search {
@@ -1315,7 +1315,7 @@ input[type="file"]:active::before {
 
 .main-nav li {
     display: inline;
-    float: right;
+    float: left;
     padding: 13px 7px;
     margin: 0 2px;
     font-size: 25px;
@@ -1434,7 +1434,7 @@ aside {
     width: 66px;
     height: 58px;
     display: block;
-    background: url(../img/user-info.png) no-repeat right top;
+    background: url(../img/user-info.png) no-repeat left top;
 }
 
 .user-info li.followrs-count a {
@@ -2142,19 +2142,19 @@ article.profile .articles > div:hover .controls,article.profile .books > div:hov
     margin: 0 5px;
 }
 
-.top .retweet i {
+.retweet i {
     color: #0ba2ce;
 }
 
-.top .commented i {
+.comment i , .commented i {
     color: #0ba2ce;
 }
 
-.top .like i {
+ .like i {
     color: #157d00;
 }
 
-.top .dislike i {
+ .dislike i {
     color: #ff0101;
 }
 
